@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone - Invest with Precision</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="logo">Milestone</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#solutions">Our Solutions</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+        <a href="#" class="join-btn">Join Today</a>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#story" onclick="toggleMenu()">Our Story</a></li>
+            <li><a href="#solutions" onclick="toggleMenu()">Our Solutions</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Get in Touch</a></li>
+            <li><a href="#" class="open-account-btn" onclick="toggleMenu()">Join Today</a></li>
+        </ul>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Invest with Precision.<br>Trade Smarter with Milestone.</h1>
+            <p>Navigate global markets effortlessly through our intuition, cutting-edge technology, and proven expertise. Let us simplify the investment journey so you can focus on building sustainable wealth.</p>
+            <a href="#" class="open-account-btn">Open an Account</a>
+        </div>
+        <div class="hero-image">
+            <div class="chart-container">
+                <canvas id="chartCanvas" class="chart-line"></canvas>
+                <div class="chart-overlay">
+                    <h4>Market Growth</h4>
+                    <p>+12.5%</p>
+                </div>
+                <div class="chart-bars">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our-story" id="story">
+        <h2>Our Story</h2>
+        <p>Mr. Mehul Vinod Sheth is the Founder and CEO of Milestone Shares and Securities. He is an MBA in Finance professional with an impressive 15-year career in the stock market. Driven by ambition and a deep passion, Mehul specializes in the field of equity and wealth creation, providing strategic financial growth across various segments.</p>
+    </section>
+
+    <section class="why-choose">
+        <h2>Why Client Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">👥</div>
+                <h3>500 Happy Clients</h3>
+                <p>Your success is our priority and it shows in our client satisfaction rate</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💼</div>
+                <h3>400 Active Clients</h3>
+                <p>Engaged clients rely on our platform every day for their financial growth</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⏰</div>
+                <h3>1463 Hours of Support</h3>
+                <p>Dedicated time ensuring you always have expert guidance when you need it</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">👑</div>
+                <h3>15 Hard Workers</h3>
+                <p>Our experienced team of experts are here to guide and support your financial journey</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="offices">
+        <div class="office-card">
+            <h3>HEAD OFFICE</h3>
+            <h4>Milestone shares and securities</h4>
+            <ul>
+                <li>📍 Flat No C/613, Lancelot Building, opp Kalyan Jewellers S.V. Road, Borivali West, Mumbai - 400 092</li>
+                <li>📞 Ph: <a href="tel:+919773445770">+91 9773445770</a></li>
+                <li>✉️ Email: <a href="mailto:milestone.sec205@gmail.com">milestone.sec205@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="office-card">
+            <h3>BRANCH OFFICE</h3>
+            <h4>Milestone shares and securities</h4>
+            <ul>
+                <li>📍 Office No. 101, 1st Floor, The Icon Building, 100 Ft Road, New Thippasandra, Bengaluru - 560 075</li>
+                <li>📞 Ph: <a href="tel:+919773445770">+91 9773445770</a></li>
+                <li>✉️ Email: <a href="mailto:milestone.sec205@gmail.com">milestone.sec205@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="solutions" id="solutions">
+        <h2>Our Solutions</h2>
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <div class="solution-icon">📈</div>
+                <h3>Equity & Derivatives</h3>
+                <p>Your success is our priority and it shows in our client satisfaction rate</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">🥇</div>
+                <h3>Commodities</h3>
+                <p>Explore opportunities in our platform away day for commodities trading</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">💱</div>
+                <h3>Currency</h3>
+                <p>Dedicated time ensuring you always have expert guidance</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">🎯</div>
+                <h3>IPO</h3>
+                <p>Our experienced team of experts finance and technology experts here</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">🏦</div>
+                <h3>Depository</h3>
+                <p>Secure storage for your digital assets to be managed by you and your team</p>
+            </div>
+            <div class="solution-card">
+                <div class="solution-icon">💼</div>
+                <h3>Mutual Funds</h3>
+                <p>Professional management of diverse investment portfolios to help you reach your goal</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section footer-company">
+                <div class="logo">Milestone</div>
+                <p>📍 Flat No C/613, Lancelot Building, opp Kalyan Jewellers S.V. Road, Borivali West, Mumbai - 400 092</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.7729166940747!2d72.8542!3d19.2295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b0e57647e5e5%3A0x1234567890abcdef!2sBorivali%20West%2C%20Mumbai%2C%20Maharashtra%20400092!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#story">Our Story</a></li>
+                    <li><a href="#solutions">Our Solutions</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Equity & Derivatives</a></li>
+                    <li><a href="#">Commodities</a></li>
+                    <li><a href="#">Currency Trading</a></li>
+                    <li><a href="#">IPO Services</a></li>
+                    <li><a href="#">Depository</a></li>
+                    <li><a href="#">Mutual Funds</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Get in Touch</h3>
+                <p style="margin-bottom: 15px;">📞 <strong>Phone:</strong><br><a href="tel:+919773445770" style="color: #00d9ff; text-decoration: none;">+91 9773445770</a></p>
+                <p style="margin-bottom: 15px;">✉️ <strong>Email:</strong><br><a href="mailto:milestone.sec205@gmail.com" style="color: #00d9ff; text-decoration: none;">milestone.sec205@gmail.com</a></p>
+                <p>🏢 <strong>Branch Office:</strong><br>Office No. 101, 1st Floor, The Icon Building, New Thippasandra, Bengaluru - 560 075</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Milestone Shares and Securities. All rights reserved. | Navigate markets with precision.| Design and developed by <a href="https://indzone.in/"><b>Indzone.</b></a></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
