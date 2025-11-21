@@ -294,6 +294,67 @@ nav {
   font-size: 14px;
 }
 
+/* New Team Styles */
+.team-container {
+    margin-top: 50px;
+}
+.team-container h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #00d9ff;
+    text-align: center;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.team-card {
+    background: #000;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+}
+.team-member-image {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #00d9ff, #ff006b);
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #111;
+    overflow: hidden;
+    border: 4px solid #fff;
+}
+.team-card h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.team-card p.designation {
+    color: #00d9ff;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+.team-card p.brief {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 .offices {
   padding: 80px 50px;
   display: grid;
