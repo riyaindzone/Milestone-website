@@ -15,21 +15,24 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.95);
+  background: #fff;
   backdrop-filter: blur(10px);
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
+  color: #03116b;
 }
 .logo img {
-    height: 60px;
+    height: 100px;
     width: auto;
     margin-right: 10px;
     vertical-align: middle;
@@ -39,21 +42,25 @@ nav {
   display: flex;
   gap: 30px;
   list-style: none;
+  color: #03116b;
 }
 
 .nav-links a {
-  color: #fff;
+  color: #03116b;
+  font-weight: bold;
+  font-size: large;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #00d9ff;
+  color: #2010c7;
 }
 
 .join-btn {
   background: linear-gradient(135deg, #00d9ff, #0099ff);
   padding: 12px 30px;
+  margin: 10px 30px;
   border-radius: 25px;
   color: #fff;
   text-decoration: none;
@@ -443,8 +450,15 @@ nav {
 }
 
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.95)),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(0,217,255);stop-opacity:0.1" /><stop offset="100%" style="stop-color:rgb(255,0,107);stop-opacity:0.1" /></linearGradient></defs><path fill="none" stroke="url(%23grad1)" stroke-width="2" d="M0,200 Q150,150 300,180 T600,200 T900,160 T1200,190" opacity="0.3"/><path fill="none" stroke="url(%23grad1)" stroke-width="2" d="M0,220 Q150,170 300,200 T600,220 T900,180 T1200,210" opacity="0.2"/><circle cx="200" cy="180" r="3" fill="%2300d9ff" opacity="0.6"/><circle cx="400" cy="200" r="3" fill="%23ff006b" opacity="0.6"/><circle cx="600" cy="190" r="3" fill="%2300d9ff" opacity="0.6"/><circle cx="800" cy="170" r="3" fill="%23ff006b" opacity="0.6"/><circle cx="1000" cy="200" r="3" fill="%2300d9ff" opacity="0.6"/></svg>');
+  /* 1. Change the base background to white (#ffffff) */
+  background: 
+    /* 2. Update the linear gradient to use white/transparent colors 
+       with very low opacity so it acts as a subtle filter */
+    linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)),
+    /* Keep the SVG background image */
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(0,217,255);stop-opacity:0.1" /><stop offset="100%" style="stop-color:rgb(255,0,107);stop-opacity:0.1" /></linearGradient></defs><path fill="none" stroke="url(%23grad1)" stroke-width="2" d="M0,200 Q150,150 300,180 T600,200 T900,160 T1200,190" opacity="0.3"/><path fill="none" stroke="url(%23grad1)" stroke-width="2" d="M0,220 Q150,170 300,200 T600,220 T900,180 T1200,210" opacity="0.2"/><circle cx="200" cy="180" r="3" fill="%2300d9ff" opacity="0.6"/><circle cx="400" cy="200" r="3" fill="%23ff006b" opacity="0.6"/><circle cx="600" cy="190" r="3" fill="%2300d9ff" opacity="0.6"/><circle cx="800" cy="170" r="3" fill="%23ff006b" opacity="0.6"/><circle cx="1000" cy="200" r="3" fill="%2300d9ff" opacity="0.6"/></svg>'), 
+    #ffffff; /* 3. Add a fallback solid white background */
+    
   background-size: cover;
   background-position: center;
   padding: 60px 50px 30px;
@@ -516,7 +530,8 @@ footer::before {
 }
 
 .footer-section a {
-  color: #bbb;
+  color: #000;
+  font-weight: 700;
   text-decoration: none;
   transition: all 0.3s;
   display: inline-block;
@@ -530,6 +545,11 @@ footer::before {
 .footer-company {
   line-height: 1.8;
   color: #bbb;
+}
+
+footer p{
+  color: #03116b;
+  font-weight: 700;
 }
 
 .footer-company .logo {
@@ -567,7 +587,7 @@ footer::before {
   display: none;
   background: none;
   border: none;
-  color: #fff;
+  color:  #000;
   font-size: 28px;
   cursor: pointer;
 }
