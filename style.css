@@ -28,6 +28,12 @@ nav {
   font-size: 24px;
   font-weight: bold;
 }
+.logo img {
+    height: 60px;
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
 
 .nav-links {
   display: flex;
@@ -264,6 +270,11 @@ nav {
 .feature-icon {
   font-size: 48px;
   margin-bottom: 20px;
+}
+
+.feature-number{
+  font-weight: bold;
+  font-size: 28px;
 }
 
 .feature-card h3 {
@@ -590,6 +601,22 @@ footer::before {
   font-size: 18px;
   display: block;
   padding: 10px;
+}
+
+.sticky-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    background-color: #25d366; 
+    color: white;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 2.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 900;
 }
 
 @media (max-width: 768px) {

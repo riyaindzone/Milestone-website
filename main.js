@@ -3,6 +3,46 @@ function toggleMenu() {
   menu.classList.toggle("active");
 }
 
+// Counter Animation
+function animateCounter(element, target, duration = 2000) {
+  const start = 0;
+  const increment = target / (duration / 16);
+  let current = 0;
+
+  const timer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      element.textContent = target.toLocaleString();
+      clearInterval(timer);
+    } else {
+      element.textContent = Math.floor(current).toLocaleString();
+    }
+  }, 16);
+}
+
+// Intersection Observer for counter animation
+const observerOptions = {
+  threshold: 0.5,
+  rootMargin: "0px",
+};
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      const target = parseInt(entry.target.getAttribute("data-target"));
+      entry.target.textContent = "0";
+      animateCounter(entry.target, target);
+    }
+  });
+}, observerOptions);
+
+// Observe all counter elements
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".feature-number").forEach((counter) => {
+    observer.observe(counter);
+  });
+});
+
 const canvas = document.getElementById("chartCanvas");
 const ctx = canvas.getContext("2d");
 
