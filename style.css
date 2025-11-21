@@ -538,7 +538,7 @@ footer::before {
 }
 
 .footer-section a:hover {
-  color: #00d9ff;
+  color: #666;
   transform: translateX(5px);
 }
 
@@ -548,8 +548,12 @@ footer::before {
 }
 
 footer p{
-  color: #03116b;
+  color: #000;
   font-weight: 700;
+}
+
+footer a{
+  color: #000;
 }
 
 .footer-company .logo {
