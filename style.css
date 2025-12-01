@@ -3,14 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #000;
   color: #fff;
   overflow-x: hidden;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -25,7 +23,6 @@ nav {
   background: #fff;
   backdrop-filter: blur(10px);
 }
-
 .logo {
   font-size: 24px;
   font-weight: bold;
@@ -37,14 +34,12 @@ nav {
     margin-right: 10px;
     vertical-align: middle;
 }
-
 .nav-links {
   display: flex;
   gap: 30px;
   list-style: none;
   color: #03116b;
 }
-
 .nav-links a {
   color: #03116b;
   font-weight: bold;
@@ -52,11 +47,9 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
 }
-
 .nav-links a:hover {
   color: #2010c7;
 }
-
 .join-btn {
   background: linear-gradient(135deg, #00d9ff, #0099ff);
   padding: 12px 30px;
@@ -67,11 +60,9 @@ nav {
   font-weight: 600;
   transition: transform 0.3s;
 }
-
 .join-btn:hover {
   transform: scale(1.05);
 }
-
 .hero {
   padding: 150px 50px 100px;
   display: grid;
@@ -80,20 +71,17 @@ nav {
   align-items: center;
   min-height: 100vh;
 }
-
 .hero-content h1 {
   font-size: 48px;
   margin-bottom: 20px;
   line-height: 1.2;
 }
-
 .hero-content p {
   font-size: 16px;
   line-height: 1.6;
   color: #bbb;
   margin-bottom: 30px;
 }
-
 .open-account-btn {
   background: linear-gradient(135deg, #ff006b, #ff4d9e);
   padding: 15px 40px;
@@ -104,11 +92,9 @@ nav {
   display: inline-block;
   transition: transform 0.3s;
 }
-
 .open-account-btn:hover {
   transform: scale(1.05);
 }
-
 .hero-image {
   position: relative;
   display: flex;
@@ -116,7 +102,6 @@ nav {
   align-items: center;
   padding: 0 20px;
 }
-
 .chart-container {
   width: 85%;
   max-width: 500px;
@@ -132,14 +117,12 @@ nav {
   box-shadow: 0 10px 40px rgba(0, 217, 255, 0.3);
   border: 1px solid rgba(0, 217, 255, 0.2);
 }
-
 .chart-line {
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 1;
 }
-
 .chart-overlay {
   position: absolute;
   top: 20px;
@@ -150,19 +133,16 @@ nav {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(0, 217, 255, 0.3);
 }
-
 .chart-overlay h4 {
   color: #00d9ff;
   font-size: 14px;
   margin-bottom: 5px;
 }
-
 .chart-overlay p {
   color: #0f0;
   font-size: 24px;
   font-weight: bold;
 }
-
 .chart-bars {
   position: absolute;
   bottom: 30px;
@@ -172,7 +152,6 @@ nav {
   align-items: flex-end;
   height: 280px;
 }
-
 .bar {
   width: 14px;
   background: linear-gradient(to top, #00d9ff, #0099ff);
@@ -180,7 +159,6 @@ nav {
   animation: barGrow 2s ease-in-out infinite;
   box-shadow: 0 0 20px rgba(0, 217, 255, 0.6);
 }
-
 .bar:nth-child(1) {
   height: 140px;
   animation-delay: 0s;
@@ -217,7 +195,6 @@ nav {
   height: 160px;
   animation-delay: 0.8s;
 }
-
 @keyframes barGrow {
   0%,
   100% {
@@ -229,39 +206,32 @@ nav {
     opacity: 1;
   }
 }
-
 .our-story {
   background: #111;
   padding: 80px 50px;
   margin: 50px;
   border-radius: 20px;
 }
-
 .our-story h2 {
   font-size: 36px;
   margin-bottom: 30px;
 }
-
 .our-story p {
   line-height: 1.8;
   color: #ccc;
 }
-
 .why-choose {
   padding: 80px 50px;
 }
-
 .why-choose h2 {
   font-size: 36px;
   margin-bottom: 50px;
 }
-
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-
 .feature-card {
   background: #111;
   padding: 40px 30px;
@@ -269,90 +239,247 @@ nav {
   text-align: center;
   transition: transform 0.3s;
 }
-
 .feature-card:hover {
   transform: translateY(-10px);
 }
-
 .feature-icon {
   font-size: 48px;
   margin-bottom: 20px;
 }
-
 .feature-number{
   font-weight: bold;
   font-size: 28px;
 }
-
 .feature-card h3 {
   font-size: 24px;
   margin-bottom: 15px;
 }
-
 .feature-card p {
   color: #999;
   font-size: 14px;
 }
 
-/* New Team Styles */
-.team-container {
+/* Founder Section Styles */
+.founder-container {
     margin-top: 50px;
 }
-.team-container h3 {
+.founder-container h3 {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: #00d9ff;
     text-align: center;
 }
-.team-grid {
+.founder-card {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(255, 0, 107, 0.05));
+    padding: 50px;
+    border-radius: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.team-card {
-    background: #000;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.team-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
-}
-.team-member-image {
-    width: 120px;
-    height: 120px;
-    background: linear-gradient(135deg, #00d9ff, #ff006b);
-    border-radius: 50%;
-    margin: 0 auto 20px;
-    display: flex;
+    grid-template-columns: minmax(250px, 300px) 1fr; 
+    gap: 50px;
     align-items: center;
-    justify-content: center;
-    font-size: 24px;
-    font-weight: bold;
-    color: #111;
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 1200px;
+    margin: 0 auto;
     overflow: hidden;
-    border: 4px solid #fff;
 }
-.team-card h4 {
-    font-size: 22px;
+.founder-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
+}
+.founder-image {
+    width: 300px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 4px solid #00d9ff;
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.4);
+     flex-shrink: 0;
+}
+.founder-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.founder-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     min-width: 0; 
+    overflow: hidden;
+}
+.founder-details h4 {
+    font-size: 32px;
     margin-bottom: 5px;
     color: #fff;
+    background: linear-gradient(135deg, #00d9ff, #ff006b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
-.team-card p.designation {
+.founder-details p.designation {
     color: #00d9ff;
-    font-size: 16px;
+    font-size: 20px;
     margin-bottom: 15px;
     font-weight: 600;
 }
-.team-card p.brief {
-    color: #bbb;
+.founder-details p.brief {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+     word-wrap: break-word;  /* Add this */
+    overflow-wrap: break-word; 
+}
+.founder-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    border: 2px solid rgba(0, 217, 255, 0.3);
+    transition: all 0.3s;
+}
+.stat:hover {
+    transform: scale(1.05);
+    border-color: #00d9ff;
+}
+.stat-number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00d9ff;
+    margin-bottom: 5px;
+}
+.stat-label {
     font-size: 14px;
-    line-height: 1.6;
+    color: #999;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 80px 50px;
+    background: #000;
+}
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.testimonial-card {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(255, 0, 107, 0.05));
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    position: relative;
+    transition: all 0.3s;
+}
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
+    border-color: #00d9ff;
+}
+.quote-icon {
+    font-size: 60px;
+    color: #00d9ff;
+    line-height: 1;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+.testimonial-text {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.author-avatar {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #00d9ff, #ff006b);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    border: 3px solid #fff;
+}
+.author-info h4 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.author-info p {
+    font-size: 14px;
+    color: #00d9ff;
+}
+
+/* Awards Section */
+.awards {
+    padding: 80px 50px;
+    background: #111;
+}
+.awards h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.awards-subtitle {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.award-card {
+    background: linear-gradient(135deg, rgba(0, 217, 255, 0.05), rgba(255, 0, 107, 0.05));
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    transition: all 0.3s;
+}
+.award-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 217, 255, 0.3);
+    border-color: #00d9ff;
+}
+.award-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(0, 217, 255, 0.3);
+}
+.award-card h4 {
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.4;
 }
 
 .offices {
@@ -361,53 +488,43 @@ nav {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
 }
-
 .office-card {
   background: #111;
   padding: 40px;
   border-radius: 15px;
 }
-
 .office-card h3 {
   color: #ff006b;
   font-size: 18px;
   margin-bottom: 20px;
 }
-
 .office-card h4 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-
 .office-card ul {
   list-style: none;
 }
-
 .office-card li {
   margin-bottom: 15px;
   color: #ccc;
 }
-
 .office-card a {
   color: #00d9ff;
   text-decoration: none;
   transition: all 0.3s;
 }
-
 .office-card a:hover {
   color: #ff006b;
   text-decoration: underline;
 }
-
 .solutions {
   padding: 80px 50px;
 }
-
 .solutions h2 {
   font-size: 36px;
   margin-bottom: 50px;
 }
-
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -415,7 +532,6 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .solution-card {
   background: #111;
   padding: 40px 30px;
@@ -423,11 +539,9 @@ nav {
   text-align: center;
   transition: transform 0.3s;
 }
-
 .solution-card:hover {
   transform: translateY(-10px);
 }
-
 .solution-icon {
   font-size: 48px;
   margin-bottom: 20px;
@@ -445,7 +559,6 @@ nav {
   );
   border: 2px solid rgba(0, 217, 255, 0.3);
 }
-
 .solution-card:nth-child(1) .solution-icon {
   background: linear-gradient(
     135deg,
@@ -454,7 +567,6 @@ nav {
   );
   border-color: rgba(0, 217, 255, 0.4);
 }
-
 .solution-card:nth-child(2) .solution-icon {
   background: linear-gradient(
     135deg,
@@ -463,7 +575,6 @@ nav {
   );
   border-color: rgba(255, 170, 0, 0.4);
 }
-
 .solution-card:nth-child(3) .solution-icon {
   background: linear-gradient(
     135deg,
@@ -472,7 +583,6 @@ nav {
   );
   border-color: rgba(0, 255, 136, 0.4);
 }
-
 .solution-card:nth-child(4) .solution-icon {
   background: linear-gradient(
     135deg,
@@ -481,7 +591,6 @@ nav {
   );
   border-color: rgba(255, 0, 107, 0.4);
 }
-
 .solution-card:nth-child(5) .solution-icon {
   background: linear-gradient(
     135deg,
@@ -490,7 +599,6 @@ nav {
   );
   border-color: rgba(138, 43, 226, 0.4);
 }
-
 .solution-card:nth-child(6) .solution-icon {
   background: linear-gradient(
     135deg,
@@ -499,27 +607,19 @@ nav {
   );
   border-color: rgba(0, 217, 255, 0.4);
 }
-
 .solution-card h3 {
   font-size: 20px;
   margin-bottom: 15px;
 }
-
 .solution-card p {
   color: #999;
   font-size: 14px;
 }
-
 footer {
-  /* 1. Change the base background to white (#ffffff) */
   background: 
-    /* 2. Update the linear gradient to use white/transparent colors 
-       with very low opacity so it acts as a subtle filter */
     linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.98)),
-    /* Keep the SVG background image */
     url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:rgb(0,217,255);stop-opacity:0.1" /><stop offset="100%" style="stop-color:rgb(255,0,107);stop-opacity:0.1" /></linearGradient></defs><path fill="none" stroke="url(%23grad1)" stroke-width="2" d="M0,200 Q150,150 300,180 T600,200 T900,160 T1200,190" opacity="0.3"/><path fill="none" stroke="url(%23grad1)" stroke-width="2" d="M0,220 Q150,170 300,200 T600,220 T900,180 T1200,210" opacity="0.2"/><circle cx="200" cy="180" r="3" fill="%2300d9ff" opacity="0.6"/><circle cx="400" cy="200" r="3" fill="%23ff006b" opacity="0.6"/><circle cx="600" cy="190" r="3" fill="%2300d9ff" opacity="0.6"/><circle cx="800" cy="170" r="3" fill="%23ff006b" opacity="0.6"/><circle cx="1000" cy="200" r="3" fill="%2300d9ff" opacity="0.6"/></svg>'), 
-    #ffffff; /* 3. Add a fallback solid white background */
-    
+    #ffffff;
   background-size: cover;
   background-position: center;
   padding: 60px 50px 30px;
@@ -527,7 +627,6 @@ footer {
   position: relative;
   overflow: hidden;
 }
-
 footer::before {
   content: "";
   position: absolute;
@@ -538,7 +637,6 @@ footer::before {
   background: linear-gradient(90deg, #00d9ff, #ff006b, #00d9ff);
   opacity: 0.5;
 }
-
 .footer-content {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
@@ -547,7 +645,6 @@ footer::before {
   position: relative;
   z-index: 1;
 }
-
 .footer-section h3 {
   margin-bottom: 20px;
   font-size: 20px;
@@ -555,7 +652,6 @@ footer::before {
   position: relative;
   padding-bottom: 10px;
 }
-
 .footer-section h3::after {
   content: "";
   position: absolute;
@@ -565,31 +661,24 @@ footer::before {
   height: 3px;
   background: currentColor;
 }
-
 .footer-section:nth-child(1) h3 {
   color: #00d9ff;
 }
-
 .footer-section:nth-child(2) h3 {
   color: #ff006b;
 }
-
 .footer-section:nth-child(3) h3 {
   color: #ffaa00;
 }
-
 .footer-section:nth-child(4) h3 {
   color: #00ff88;
 }
-
 .footer-section ul {
   list-style: none;
 }
-
 .footer-section li {
   margin-bottom: 10px;
 }
-
 .footer-section a {
   color: #000;
   font-weight: 700;
@@ -597,26 +686,21 @@ footer::before {
   transition: all 0.3s;
   display: inline-block;
 }
-
 .footer-section a:hover {
   color: #666;
   transform: translateX(5px);
 }
-
 .footer-company {
   line-height: 1.8;
   color: #bbb;
 }
-
 footer p{
   color: #000;
   font-weight: 700;
 }
-
 footer a{
   color: #000;
 }
-
 .footer-company .logo {
   font-size: 28px;
   font-weight: bold;
@@ -626,28 +710,24 @@ footer a{
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 .map-container {
   margin-top: 20px;
   border-radius: 10px;
   overflow: hidden;
   border: 2px solid rgba(0, 217, 255, 0.3);
 }
-
 .map-container iframe {
   width: 100%;
   height: 200px;
   border: none;
   filter: grayscale(1) invert(0.9) contrast(1.2);
 }
-
 .copyright {
   text-align: center;
   padding-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: #666;
 }
-
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -656,7 +736,6 @@ footer a{
   font-size: 28px;
   cursor: pointer;
 }
-
 .mobile-menu {
   display: none;
   position: fixed;
@@ -667,19 +746,15 @@ footer a{
   padding: 20px;
   z-index: 999;
 }
-
 .mobile-menu.active {
   display: block;
 }
-
 .mobile-menu ul {
   list-style: none;
 }
-
 .mobile-menu li {
   margin-bottom: 20px;
 }
-
 .mobile-menu a {
   color: #fff;
   text-decoration: none;
@@ -687,7 +762,6 @@ footer a{
   display: block;
   padding: 10px;
 }
-
 .sticky-whatsapp {
     position: fixed;
     bottom: 20px;
@@ -704,68 +778,77 @@ footer a{
     z-index: 900;
 }
 
+
+@media (max-width: 1200px) {
+  .founder-card {
+    padding: 40px 30px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .founder-card {
+    grid-template-columns: 1fr;
+    padding: 40px 30px;
+    gap: 30px;
+  }
+  .founder-image {
+    width: 100%;
+    max-width: 350px;
+    height: 450px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 768px) {
   nav {
     padding: 20px 30px;
   }
-
   .nav-links {
     display: none;
   }
-
   .mobile-menu-btn {
     display: block;
   }
-
   .join-btn {
     display: none;
   }
-
   .hero {
     grid-template-columns: 1fr;
     padding: 120px 20px 50px;
     gap: 30px;
   }
-
   .hero-content h1 {
     font-size: 28px;
   }
-
   .hero-content p {
     font-size: 14px;
   }
-
   .chart-container {
     height: 300px;
     width: 100%;
     max-width: none;
   }
-
   .chart-overlay {
     top: 10px;
     right: 10px;
     padding: 10px 15px;
   }
-
   .chart-overlay h4 {
     font-size: 12px;
   }
-
   .chart-overlay p {
     font-size: 18px;
   }
-
   .chart-bars {
     bottom: 15px;
     left: 15px;
     height: 180px;
     gap: 6px;
   }
-
   .bar {
     width: 10px;
   }
-
   .bar:nth-child(1) {
     height: 80px;
   }
@@ -793,142 +876,270 @@ footer a{
   .bar:nth-child(9) {
     height: 95px;
   }
-
   .our-story {
     padding: 50px 20px;
     margin: 20px;
   }
-
   .our-story h2 {
     font-size: 28px;
   }
-
   .our-story p {
     font-size: 14px;
   }
-
+  
+  /* Founder Mobile Styles */
+  .founder-card {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .founder-image {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .founder-image img {
+    object-fit: cover;  
+    object-position: center top;  
+  }
+  .founder-details h4 {
+    font-size: 26px;
+    text-align: center;
+  }
+  .founder-details p.designation {
+    font-size: 18px;
+    text-align: center;
+  }
+  .founder-details p.brief {
+    font-size: 15px;
+    text-align: center;
+  }
+  .founder-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .stat {
+    width: 100%;
+    padding: 15px 20px;
+  }
+  
   .why-choose {
     padding: 50px 20px;
   }
-
   .why-choose h2 {
     font-size: 28px;
     margin-bottom: 30px;
   }
-
   .features-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
   .feature-card {
     padding: 30px 20px;
   }
-
+  
+  /* Testimonials Mobile */
+  .testimonials {
+    padding: 50px 20px;
+  }
+  .testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .testimonial-card {
+    padding: 30px 20px;
+  }
+  .quote-icon {
+    font-size: 50px;
+  }
+  .testimonial-text {
+    font-size: 15px;
+  }
+  
+  /* Awards Mobile */
+  .awards {
+    padding: 50px 20px;
+  }
+  .awards h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .awards-subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .award-card {
+    padding: 20px;
+  }
+  .award-card img {
+    height: 150px;
+  }
+  .award-card h4 {
+    font-size: 16px;
+  }
+  
   .offices {
     padding: 50px 20px;
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
   .office-card {
     padding: 30px 20px;
   }
-
   .office-card h3 {
     font-size: 16px;
   }
-
   .office-card h4 {
     font-size: 18px;
   }
-
   .office-card li {
     font-size: 14px;
   }
-
   .solutions {
     padding: 50px 20px;
   }
-
   .solutions h2 {
     font-size: 28px;
     margin-bottom: 30px;
   }
-
   .solutions-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
   .solution-card {
     padding: 30px 20px;
   }
-
   footer {
     padding: 40px 20px 20px;
   }
-
   .footer-content {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-
   .map-container iframe {
     height: 250px;
   }
-
   .footer-section h3 {
     font-size: 16px;
   }
-
   .footer-section p,
   .footer-section li {
     font-size: 14px;
   }
 }
-
 @media (max-width: 480px) {
   .logo {
     font-size: 20px;
   }
-
   .hero-content h1 {
     font-size: 24px;
   }
-
   .open-account-btn {
     padding: 12px 30px;
     font-size: 14px;
   }
-
   .feature-icon,
   .solution-icon {
     font-size: 36px;
   }
-
   .feature-card h3,
   .solution-card h3 {
     font-size: 18px;
   }
-
+  
+  /* Founder Small Mobile */
+  .founder-container h3 {
+    font-size: 24px;
+  }
+  .founder-card {
+    padding: 20px 15px;
+  }
+  .founder-image {
+    height: 300px;
+  }
+  .founder-details h4 {
+    font-size: 22px;
+  }
+  .founder-details p.designation {
+    font-size: 16px;
+  }
+  .founder-details p.brief {
+    font-size: 14px;
+  }
+  .stat-number {
+    font-size: 24px;
+  }
+  .stat-label {
+    font-size: 12px;
+  }
+  
+  /* Testimonials Small Mobile */
+  .testimonials h2 {
+    font-size: 24px;
+  }
+  .testimonial-card {
+    padding: 25px 15px;
+  }
+  .quote-icon {
+    font-size: 40px;
+  }
+  .testimonial-text {
+    font-size: 14px;
+  }
+  .author-avatar {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .author-info h4 {
+    font-size: 16px;
+  }
+  .author-info p {
+    font-size: 12px;
+  }
+  
+  /* Awards Small Mobile */
+  .awards h2 {
+    font-size: 24px;
+  }
+  .awards-subtitle {
+    font-size: 13px;
+  }
+  .awards-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .award-card {
+    padding: 15px;
+  }
+  .award-card img {
+    height: 180px;
+  }
+  .award-card h4 {
+    font-size: 15px;
+  }
+  
   .solutions-grid {
     grid-template-columns: 1fr;
   }
-
   .chart-container {
     height: 280px;
   }
-
   .chart-bars {
     height: 160px;
     gap: 5px;
   }
-
   .bar {
     width: 9px;
   }
-
   .bar:nth-child(1) {
     height: 70px;
   }
