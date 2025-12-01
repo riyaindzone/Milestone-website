@@ -779,6 +779,63 @@ footer a{
 }
 
 
+.solution-preview {
+    margin-bottom: 15px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.solution-full {
+    margin-bottom: 15px;
+    transition: opacity 0.4s ease-in-out, max-height 0.5s ease-in-out;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.solution-preview.fade-out {
+    opacity: 0;
+}
+
+.solution-full.fade-in {
+    opacity: 1;
+}
+
+.solution-full.fade-out {
+    opacity: 0;
+}
+
+.read-more-btn {
+    background: transparent;
+    color: #00d9ff;
+    border: 1px solid #00d9ff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.read-more-btn:hover {
+    background: #00d9ff;
+    color: #0a0a1a;
+    transform: translateY(-2px);
+}
+
+.solution-card {
+    transition: all 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 1000px;
+    }
+}
+
 @media (max-width: 1200px) {
   .founder-card {
     padding: 40px 30px;
